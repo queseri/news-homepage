@@ -2,7 +2,7 @@ import { useState } from "react";
 import Logo from "./assets/images/logo.svg";
 import Menu from "./assets/images/icon-menu.svg";
 import CloseMenu from "./assets/images/icon-menu-close.svg";
-import "./App.css";
+import "./sass/main.scss";
 
 function App() {
   return (
