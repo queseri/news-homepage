@@ -6,7 +6,7 @@ import "./sass/main.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-family">
       <header>
         <div className="container-logo">
           <img src={Logo} alt="" />
