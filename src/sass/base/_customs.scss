@@ -1,0 +1,45 @@
+@use "../utils";
+
+/* ------------------------------------*/
+/*        COLOURS                      */
+/*-------------------------------------*/
+
+$clr-almost-white: hsla(36, 100%, 99%, 1);
+$clr-dark-space-blue: hsla(240, 100%, 5%, 1);
+$clr-gunmetal: hsla(237, 13%, 42%, 1);
+$clr-light-vermillion: hsla(5, 85%, 63%, 1);
+$clr-yellow: hsla(35, 78%, 62%, 1);
+$clr-line-grey: hsla(236, 13%, 42%, 1);
+$clr-silver: hsla(236, 8%, 79%, 1);
+
+/* ------------------------------------*/
+/*        FONT SIZES                   */
+/*-------------------------------------*/
+
+$fs-12: utils.calculateRem(12);
+$fs-13: utils.calculateRem(13);
+$fs-14: utils.calculateRem(14);
+$fs-15: utils.calculateRem(15);
+$fs-16: utils.calculateRem(16);
+$fs-18: utils.calculateRem(18);
+$fs-20: utils.calculateRem(20);
+$fs-24: utils.calculateRem(24);
+$fs-28: utils.calculateRem(28);
+$fs-32: utils.calculateRem(32);
+$fs-36: utils.calculateRem(36);
+$fs-40: utils.calculateRem(40);
+$fs-56: utils.calculateRem(56);
+
+/* screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /* added line */
+    border: 0;
+}
