@@ -3,9 +3,23 @@
 
 .app {
     margin-inline: base.$spacer1;
-    margin-block: base.$spacer1 * math.div(28, 16);       
+    margin-block: base.$spacer1 * math.div(28, 16);
 }
 
 #root {
     overflow-x: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: base.$clr-dark-space-blue;
+    opacity: 0;
+}
+
+.show-overlay {
+    opacity: 0.5;
 }

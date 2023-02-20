@@ -14,6 +14,7 @@ function App() {
   }
   return (
     <div className="app font-family">
+      <div className={`overlay ${menu ? "show-overlay" : "" }`}></div>
       <header className="header flex">
         <div className="container-logo">
           <img src={Logo} alt="" />
@@ -35,19 +36,19 @@ function App() {
 
           <ul id="main-nav" className={`main-nav ${menu ? "show-nav" : ""}`}>
             <li>
-              <a href="">Home</a>
+              <a className="nav-link" href="">Home</a>
             </li>
             <li>
-              <a href="">New</a>
+              <a className="nav-link" href="">New</a>
             </li>
             <li>
-              <a href="">Popular</a>
+              <a className="nav-link" href="">Popular</a>
             </li>
             <li>
-              <a href="">Trending</a>
+              <a className="nav-link" href="">Trending</a>
             </li>
             <li>
-              <a href="">Categories</a>
+              <a className="nav-link" href="">Categories</a>
             </li>
           </ul>
         </nav>
@@ -67,7 +68,7 @@ function App() {
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
             </p>
-            <a href=""  rel="noopener noreferrer">
+            <a className="nav-link" href=""  rel="noopener noreferrer">
               Read more
               <span className="sr-only">about web3 technology</span>
             </a>

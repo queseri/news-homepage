@@ -1,14 +1,32 @@
+@use "../base";
+
 .nav {
     position: relative;
 }
 
 .main-nav {
     position: absolute;
-    right: -500px;
+    right: -1000px;
+    width: 69vw;
+    height: 100vh;
     transition: all 0.5s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-inline-start: 1.5rem;
 }
 
 .show-nav {
-    right: 0;
+    right: -1rem;
     transition: all 0.5s ease-out;
+    top: -(base.$spacer1 * 2);
+    background-color: base.$clr-almost-white;
+}
+
+.nav-link {
+    color: base.$clr-dark-space-blue;
+    font-size: base.$fs-18;
+    text-decoration: none;
 }

@@ -1,0 +1,5 @@
+@use "../base";
+
+.header {
+    margin-block-end: base.$spacer1 * 1.5;
+}
