@@ -1,0 +1,11 @@
+@use 'sass:math';
+@use "../base";
+
+.app {
+    margin-inline: base.$spacer1;
+    margin-block: base.$spacer1 * math.div(28, 16);       
+}
+
+#root {
+    overflow-x: hidden;
+}

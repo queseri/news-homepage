@@ -1,0 +1,14 @@
+.nav {
+    position: relative;
+}
+
+.main-nav {
+    position: absolute;
+    right: -500px;
+    transition: all 0.5s ease-in;
+}
+
+.show-nav {
+    right: 0;
+    transition: all 0.5s ease-out;
+}
