@@ -11,6 +11,13 @@
     overflow-x: hidden;
 }
 
+.overflow-y {
+    overflow-y: hidden;
+    @include utils.mQ(45rem) {
+       overflow-y: auto;
+    }
+}
+
 .overlay {
     position: absolute;
     top: 0;

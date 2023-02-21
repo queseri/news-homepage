@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from "./assets/images/logo.svg";
 import Menu from "./assets/images/icon-menu.svg";
 import CloseMenu from "./assets/images/icon-menu-close.svg";
@@ -12,6 +12,15 @@ function App() {
   function handleMenu() {
     setMenu(() => !menu);
   }
+
+  useEffect(() => {
+    if (menu) {
+      document.body.classList.add("overflow-y");
+    } else {
+      document.body.classList.remove("overflow-y");
+    }
+  }, [menu]);
+
   return (
     <div className="app font-family">
       <div className={`overlay ${menu ? "show-overlay" : ""}`}></div>
