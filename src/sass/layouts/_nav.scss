@@ -1,4 +1,5 @@
 @use "../base";
+@use "../utils";
 
 .nav {
     position: relative;
@@ -16,6 +17,14 @@
     align-items: flex-start;
     gap: 1rem;
     padding-inline-start: 1.5rem;
+  
+    @include utils.mQ(45rem) {
+        width: 100%;
+        position: relative;
+        height: auto;
+        flex-direction: row;    
+        right: 0;   
+    }
 }
 
 .show-nav {
@@ -23,10 +32,15 @@
     transition: all 0.5s ease-out;
     top: -(base.$spacer1 * 2);
     background-color: base.$clr-almost-white;
+    @include utils.mQ(45rem) {       
+       top: 0; 
+       right: 0; 
+    }
 }
 
 .nav-link {
     color: base.$clr-dark-space-blue;
     font-size: base.$fs-18;
     text-decoration: none;
+    font-weight: 400;
 }

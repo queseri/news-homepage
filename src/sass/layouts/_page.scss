@@ -1,5 +1,6 @@
 @use 'sass:math';
 @use "../base";
+@use "../utils";
 
 .app {
     margin-inline: base.$spacer1;
@@ -18,8 +19,15 @@
     height: 100vh;
     background: base.$clr-dark-space-blue;
     opacity: 0;
+    @include utils.mQ(45rem) {
+        width: 0; 
+        height: 0;
+    }
 }
 
 .show-overlay {
     opacity: 0.5;
+    @include utils.mQ(45rem) {
+       opacity: 0;
+    }
 }

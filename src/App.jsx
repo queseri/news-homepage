@@ -57,7 +57,7 @@ function App() {
         <div className="hero">
           <div className="container-hero-img">
             <picture>
-              <source media="(min-width: 720px)" srcSet={Web3Desktop} />
+              <source media="(min-width: 45rem)" srcSet={Web3Desktop} />
               <img src={Web3Mobile} alt="" />
             </picture>
           </div>
