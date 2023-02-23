@@ -4,6 +4,9 @@ import Menu from "./assets/images/icon-menu.svg";
 import CloseMenu from "./assets/images/icon-menu-close.svg";
 import Web3Mobile from "./assets/images/image-web-3-mobile.jpg";
 import Web3Desktop from "./assets/images/image-web-3-desktop.jpg";
+import Retros from "./assets/images/image-retro-pcs.jpg";
+import TopLaptops from "./assets/images/image-top-laptops.jpg";
+import Gaming from "./assets/images/image-gaming-growth.jpg";
 import "./sass/main.scss";
 
 function App() {
@@ -87,15 +90,15 @@ function App() {
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
             </p>
-            <a className="nav-link" href="" rel="noopener noreferrer">
+            <a className="btn-link" href="" rel="noopener noreferrer">
               Read more
               <span className="sr-only">about web3 technology</span>
             </a>
           </div>
         </div>
-        <article>
+        <article className="new-articles">
           <h2>New</h2>
-          <div className="artcles">
+          <div className="articles">
             <div className="article">
               <h3>Hydrogen VS Electric Cars</h3>
               <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
@@ -117,7 +120,43 @@ function App() {
           </div>
         </article>
       </main>
-      <footer>footer</footer>
+      <footer>
+        <ul>
+          <li className="footer-item">
+            <div className="footer-img">
+              <img src={Retros} alt="" />
+            </div>
+            <div className="footer-content">
+              <h2>
+                <a href="">Reviving Retro PCs</a>
+              </h2>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </li>
+          <li className="footer-item">
+            <div className="footer-img">
+              <img src={TopLaptops} alt="" />
+            </div>
+            <div className="footer-content">
+              <h2>
+                <a href="">Top 10 Laptops of 2022</a>
+              </h2>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </li>
+          <li className="footer-item">
+            <div className="footer-img">
+              <img src={Gaming} alt="" />
+            </div>
+            <div className="footer-content">
+              <h2>
+                <a href="">The Growth of Gaming</a>
+              </h2>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }

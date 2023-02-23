@@ -12,6 +12,11 @@
     position: relative;
 
     @include utils.mQ(45rem) {
-        display: none; 
+        display: none;
     }
+}
+
+.btn-link {
+    background-color: base.$clr-light-vermillion;
+    color: base.$clr-almost-white;
 }
