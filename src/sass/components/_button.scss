@@ -1,3 +1,4 @@
+@use "../base";
 @use "../utils";
 
 .close-img {
@@ -19,4 +20,6 @@
 .btn-link {
     background-color: base.$clr-light-vermillion;
     color: base.$clr-almost-white;
+    text-decoration: none;
+    padding: .5rem 1rem;
 }
