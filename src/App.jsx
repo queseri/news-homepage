@@ -25,8 +25,7 @@ function App() {
   }, [menu]);
 
   return (
-    <div className="app font-family">
-      <div className={`overlay ${menu ? "show-overlay" : ""}`}></div>
+    <div className="app font-family">    
       <header className="header flex">
         <div className="container-logo">
           <img src={Logo} alt="" />
