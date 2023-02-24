@@ -25,7 +25,7 @@ function App() {
   }, [menu]);
 
   return (
-    <div className="app font-family">    
+    <div className="app font-family">
       <header className="header flex">
         <div className="container-logo">
           <img src={Logo} alt="Welcome to Web3 technologies" />
@@ -96,22 +96,34 @@ function App() {
           </div>
         </div>
         <article className="new-articles">
-          <h2>New</h2>
+          <h2 className="new-articles-heading">New</h2>
           <div className="articles">
             <div className="article">
-              <h3><a href="">Hydrogen VS Electric Cars</a></h3>
-              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              <h3 className="article-heading">
+                <a className="article-link-btn" href="">
+                  Hydrogen VS Electric Cars
+                </a>
+              </h3>
+              <p className="article-content">Will hydrogen-fueled cars ever catch up to EVs?</p>
             </div>
             <div className="article">
-              <h3><a href="">The Downsides of AI Artistry</a></h3>
-              <p>
+              <h3 className="article-heading">
+                <a className="article-link-btn" href="">
+                  The Downsides of AI Artistry
+                </a>
+              </h3>
+              <p className="article-content">
                 What are the possible adverse effects of on-demand AI image
                 generation?
               </p>
             </div>
             <div className="article">
-              <h3><a href="">Is VC Funding Drying Up?</a></h3>
-              <p>
+              <h3 className="article-heading">
+                <a className="article-link-btn" href="">
+                  Is VC Funding Drying Up?
+                </a>
+              </h3>
+              <p className="article-content">
                 Private funding by VC firms is down 50% YOY. We take a look at
                 what that means.
               </p>
@@ -119,35 +131,35 @@ function App() {
           </div>
         </article>
       </main>
-      <footer>
+      <aside>
         <ul>
-          <li className="footer-item">
-            <div className="footer-img">
+          <li className="aside-item">
+            <div className="aside-img">
               <img src={Retros} alt="" />
             </div>
-            <div className="footer-content">
+            <div className="aside-content">
               <h2>
                 <a href="">Reviving Retro PCs</a>
               </h2>
               <p>What happens when old PCs are given modern upgrades?</p>
             </div>
           </li>
-          <li className="footer-item">
-            <div className="footer-img">
+          <li className="aside-item">
+            <div className="aside-img">
               <img src={TopLaptops} alt="" />
             </div>
-            <div className="footer-content">
+            <div className="aside-content">
               <h2>
                 <a href="">Top 10 Laptops of 2022</a>
               </h2>
               <p>Our best picks for various needs and budgets.</p>
             </div>
           </li>
-          <li className="footer-item">
-            <div className="footer-img">
+          <li className="aside-item">
+            <div className="aside-img">
               <img src={Gaming} alt="" />
             </div>
-            <div className="footer-content">
+            <div className="aside-content">
               <h2>
                 <a href="">The Growth of Gaming</a>
               </h2>
@@ -155,7 +167,7 @@ function App() {
             </div>
           </li>
         </ul>
-      </footer>
+      </aside>
     </div>
   );
 }

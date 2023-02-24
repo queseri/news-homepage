@@ -4,4 +4,46 @@
     background-color: base.$clr-dark-space-blue;
     color: base.$clr-almost-white;
     padding: base.$spacer1;
+    margin-block: base.$spacer1 * 4;
+}
+
+.new-articles-heading {
+    color: base.$clr-yellow;
+    font-size: base.$fs-32;
+    font-weight: 700;
+    line-height: base.$line-height-1;
+}
+
+.article-link-btn {
+    color: base.$clr-almost-white;
+    text-decoration: none;
+}
+
+.articles {
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    > * + * {
+       position: relative;
+       &::before {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        content: "";
+        background-color: base.$clr-line-grey;       
+       }
+    }
+}
+.article-heading {
+    padding-block: base.$spacer1 * 1.5;
+    font-size: base.$fs-20;
+    font-weight: 800;
+    line-height: base.$line-height-2;
+}
+.article-content {
+    color: base.$clr-silver;
+    font-size: base.$fs-15;
+    font-weight: 400;
+    line-height: 1.4;
 }
