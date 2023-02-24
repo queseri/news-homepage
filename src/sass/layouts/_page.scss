@@ -14,23 +14,44 @@
 .overflow-y {
     overflow-y: hidden;
     position: relative;
+
     &::before {
         position: absolute;
         width: 100vw;
         height: 100vh;
         content: "";
         opacity: 0.5;
-        background: base.$clr-dark-space-blue;       
+        background: base.$clr-dark-space-blue;
     }
+
     @include utils.mQ(45rem) {
-       overflow-y: auto;
-       &::before {
-        width: 0;
-        height: 0;
-        opacity: 0;
-       }
+        overflow-y: auto;
+
+        &::before {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
     }
 }
+
+.main-title {
+    font-size: base.$fs-40;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.main-text {
+    font-size: base.$fs-15;   
+    margin-block: base.$spacer1;
+    color: base.$clr-gunmetal;
+    line-height: base.$line-height-2;
+}
+
+.hero-content {
+    margin-block: base.$spacer1 * 2;
+}
+
 /*
 .overlay {
     position: absolute;

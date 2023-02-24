@@ -28,7 +28,7 @@ function App() {
     <div className="app font-family">    
       <header className="header flex">
         <div className="container-logo">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="Welcome to Web3 technologies" />
         </div>
         <nav aria-label="main navigation" className="nav">
           <button
@@ -83,8 +83,8 @@ function App() {
             </picture>
           </div>
           <div className="hero-content">
-            <h1>The Bright Future of Web 3.0?</h1>
-            <p>
+            <h1 className="main-title">The Bright Future of Web 3.0?</h1>
+            <p className="main-text">
               We dive into the next evolution of the web that claims to put the
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
@@ -99,18 +99,18 @@ function App() {
           <h2>New</h2>
           <div className="articles">
             <div className="article">
-              <h3>Hydrogen VS Electric Cars</h3>
+              <h3><a href="">Hydrogen VS Electric Cars</a></h3>
               <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
             </div>
             <div className="article">
-              <h3>The Downsides of AI Artistry</h3>
+              <h3><a href="">The Downsides of AI Artistry</a></h3>
               <p>
                 What are the possible adverse effects of on-demand AI image
                 generation?
               </p>
             </div>
             <div className="article">
-              <h3>Is VC Funding Drying Up?</h3>
+              <h3><a href="">Is VC Funding Drying Up?</a></h3>
               <p>
                 Private funding by VC firms is down 50% YOY. We take a look at
                 what that means.
