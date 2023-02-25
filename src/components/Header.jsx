@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/images/logo.svg";
 import Menu from "../assets/images/icon-menu.svg";
 import CloseMenu from "../assets/images/icon-menu-close.svg";
+import Navigation from "./Navigation";
 
 function Header({ menu, handleMenu }) {
   return (
@@ -23,34 +24,7 @@ function Header({ menu, handleMenu }) {
             alt=""
           />
         </button>
-
-        <ul id="main-nav" className={`main-nav ${menu ? "show-nav" : ""}`}>
-          <li>
-            <a className="nav-link" href="">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="nav-link" href="">
-              New
-            </a>
-          </li>
-          <li>
-            <a className="nav-link" href="">
-              Popular
-            </a>
-          </li>
-          <li>
-            <a className="nav-link" href="">
-              Trending
-            </a>
-          </li>
-          <li>
-            <a className="nav-link" href="">
-              Categories
-            </a>
-          </li>
-        </ul>
+        <Navigation menu={menu} />
       </nav>
     </header>
   );
