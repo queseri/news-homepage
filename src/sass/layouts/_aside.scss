@@ -1,0 +1,50 @@
+@use "../base";
+
+.aside {
+    margin-block: 2rem;
+}
+
+.aside-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: base.$spacer1 * 1.5;
+}
+
+.aside-item {
+    display: flex;
+    flex-direction: row;
+    /* justify-items: center; */
+    gap: 1rem;
+}
+
+.aside-img {
+    flex: 1 1 25%;
+}
+
+.aside-content {
+    flex: 1 1 75%;
+}
+
+.aside-item-num {
+    font-size: base.$fs-32;
+    color: base.$clr-silver;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.aside-item-title {
+    font-size: base.$fs-18;
+    font-weight: 800;
+}
+
+.aside-item-link {
+    text-decoration: none;
+    color: base.$clr-dark-space-blue;
+    line-height: 1.3;
+}
+
+.aside-content-text {
+    font-size: base.$fs-15;
+    font-weight: 400;
+    color: base.$clr-gunmetal;
+}

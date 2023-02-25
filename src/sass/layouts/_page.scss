@@ -3,8 +3,14 @@
 @use "../utils";
 
 .app {
-    margin-inline: base.$spacer1;
+    padding-inline: base.$spacer1;
     margin-block: base.$spacer1 * math.div(28, 16);
+    max-width: 69.4rem;
+
+    @include utils.mQ(45rem) {
+        margin-inline: auto;
+
+    }
 }
 
 #root {
@@ -35,6 +41,13 @@
     }
 }
 
+.main {
+    @include utils.mQ(63rem) {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
 .main-title {
     font-size: base.$fs-40;
     font-weight: 800;
@@ -42,7 +55,7 @@
 }
 
 .main-text {
-    font-size: base.$fs-15;   
+    font-size: base.$fs-15;
     margin-block: base.$spacer1;
     color: base.$clr-gunmetal;
     line-height: base.$line-height-3;

@@ -74,7 +74,7 @@ function App() {
           </ul>
         </nav>
       </header>
-      <main>
+      <main className="main">
         <div className="hero">
           <div className="container-hero-img">
             <picture>
@@ -104,7 +104,9 @@ function App() {
                   Hydrogen VS Electric Cars
                 </a>
               </h3>
-              <p className="article-content">Will hydrogen-fueled cars ever catch up to EVs?</p>
+              <p className="article-content">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
             </div>
             <div className="article">
               <h3 className="article-heading">
@@ -131,17 +133,18 @@ function App() {
           </div>
         </article>
       </main>
-      <aside>
-        <ul>
+      <aside className="aside">
+        <ul className="aside-list">
           <li className="aside-item">
             <div className="aside-img">
               <img src={Retros} alt="" />
             </div>
             <div className="aside-content">
-              <h2>
-                <a href="">Reviving Retro PCs</a>
+              <span className="aside-item-num">01</span>
+              <h2 className="aside-item-title">
+                <a className="aside-item-link" href="">Reviving Retro PCs</a>
               </h2>
-              <p>What happens when old PCs are given modern upgrades?</p>
+              <p className="aside-content-text">What happens when old PCs are given modern upgrades?</p>
             </div>
           </li>
           <li className="aside-item">
@@ -149,10 +152,11 @@ function App() {
               <img src={TopLaptops} alt="" />
             </div>
             <div className="aside-content">
-              <h2>
-                <a href="">Top 10 Laptops of 2022</a>
+              <span className="aside-item-num">02</span>
+              <h2 className="aside-item-title">
+                <a className="aside-item-link" href="">Top 10 Laptops of 2022</a>
               </h2>
-              <p>Our best picks for various needs and budgets.</p>
+              <p className="aside-content-text">Our best picks for various needs and budgets.</p>
             </div>
           </li>
           <li className="aside-item">
@@ -160,10 +164,11 @@ function App() {
               <img src={Gaming} alt="" />
             </div>
             <div className="aside-content">
-              <h2>
-                <a href="">The Growth of Gaming</a>
+              <span className="aside-item-num">03</span>
+              <h2 className="aside-item-title">
+                <a className="aside-item-link" href="">The Growth of Gaming</a>
               </h2>
-              <p>How the pandemic has sparked fresh opportunities.</p>
+              <p className="aside-content-text">How the pandemic has sparked fresh opportunities.</p>
             </div>
           </li>
         </ul>

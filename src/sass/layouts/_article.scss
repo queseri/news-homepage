@@ -1,10 +1,15 @@
 @use "../base";
+@use "../utils";
 
 .new-articles {
     background-color: base.$clr-dark-space-blue;
     color: base.$clr-almost-white;
     padding: base.$spacer1;
     margin-block: base.$spacer1 * 4;
+
+    @include utils.mQ(63rem) {
+        margin-block: 0;
+    }
 }
 
 .new-articles-heading {
@@ -24,23 +29,27 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    > * + * {
-       position: relative;
-       &::before {
-        position: absolute;
-        height: 1px;
-        width: 100%;
-        content: "";
-        background-color: base.$clr-line-grey;       
-       }
+
+    >*+* {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            content: "";
+            background-color: base.$clr-line-grey;
+        }
     }
 }
+
 .article-heading {
     padding-block: base.$spacer1 * 1.5;
     font-size: base.$fs-20;
     font-weight: 800;
     line-height: base.$line-height-2;
 }
+
 .article-content {
     color: base.$clr-silver;
     font-size: base.$fs-15;
