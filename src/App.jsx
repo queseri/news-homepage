@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
-import Logo from "./assets/images/logo.svg";
-import Menu from "./assets/images/icon-menu.svg";
-import CloseMenu from "./assets/images/icon-menu-close.svg";
 import Web3Mobile from "./assets/images/image-web-3-mobile.jpg";
 import Web3Desktop from "./assets/images/image-web-3-desktop.jpg";
 import Retros from "./assets/images/image-retro-pcs.jpg";
 import TopLaptops from "./assets/images/image-top-laptops.jpg";
 import Gaming from "./assets/images/image-gaming-growth.jpg";
+import Header from "./components/Header";
 import "./sass/main.scss";
 
 function App() {
@@ -26,54 +24,8 @@ function App() {
 
   return (
     <div className="app font-family">
-      <header className="header flex">
-        <div className="container-logo">
-          <img src={Logo} alt="Welcome to Web3 technologies" />
-        </div>
-        <nav aria-label="main navigation" className="nav">
-          <button
-            className="flex btn btn-menu-control"
-            aria-controls="main-nav"
-            aria-expanded={`${menu ? true : false}`}
-            onClick={handleMenu}
-          >
-            <img className={`${menu ? "close-img" : ""}`} src={Menu} alt="" />
-            <img
-              className={`${menu ? "" : "close-img"}`}
-              src={CloseMenu}
-              alt=""
-            />
-          </button>
-
-          <ul id="main-nav" className={`main-nav ${menu ? "show-nav" : ""}`}>
-            <li>
-              <a className="nav-link" href="">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="">
-                New
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="">
-                Popular
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="">
-                Trending
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="">
-                Categories
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header menu={menu} handleMenu={handleMenu} />
+      
       <main className="main">
         <div className="hero">
           <div className="container-hero-img">

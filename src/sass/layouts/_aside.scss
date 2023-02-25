@@ -1,7 +1,11 @@
 @use "../base";
+@use "../utils";
 
 .aside {
     margin-block: 2rem;
+    @include utils.mQ(63rem) {
+       margin-block: 5rem;
+    }
 }
 
 .aside-list {
@@ -12,8 +16,7 @@
 
 .aside-item {
     display: flex;
-    flex-direction: row;
-    /* justify-items: center; */
+    flex-direction: row;   
     gap: 1rem;
 }
 

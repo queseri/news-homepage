@@ -1,5 +1,10 @@
 @use "../base";
+@use "../utils";
 
 .header {
     margin-block-end: base.$spacer1 * 1.5;
+    
+    @include utils.mQ(63rem) {
+        margin-block-end: 4rem;
+    }
 }

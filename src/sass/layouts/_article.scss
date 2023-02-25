@@ -9,6 +9,7 @@
 
     @include utils.mQ(63rem) {
         margin-block: 0;
+        flex: 1 1 33%;
     }
 }
 
@@ -17,6 +18,9 @@
     font-size: base.$fs-32;
     font-weight: 700;
     line-height: base.$line-height-1;
+    @include utils.mQ(45rem) {
+        font-size: base.$fs-40;
+    }
 }
 
 .article-link-btn {
