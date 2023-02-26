@@ -26,6 +26,13 @@
 .article-link-btn {
     color: base.$clr-almost-white;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: base.$clr-yellow;
+        outline: dashed currentColor;
+        outline-offset: .35em;
+    }
 }
 
 .articles {

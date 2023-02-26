@@ -4,7 +4,7 @@
 .nav {
     position: relative;
 
-  
+
 }
 
 .main-nav {
@@ -46,6 +46,14 @@
     font-size: base.$fs-18;
     text-decoration: none;
     font-weight: 400;
+
+    &:hover,
+    &:focus {
+        color: base.$clr-light-vermillion;
+        outline: dashed currentColor;
+        outline-offset: .35em;
+    }
+
     @include utils.mQ(45rem) {
         font-size: base.$fs-15;
     }

@@ -7,9 +7,10 @@ import Navigation from "./Navigation";
 function Header({ menu, handleMenu }) {
   return (
     <header className="header flex">
-      <div className="container-logo">
-        <img src={Logo} alt="Welcome to Web3 technologies" />
-      </div>
+      <a href="#" className="btn-logo">
+        <img src={Logo} alt="" />
+        <span className="sr-only">Welcome to Web3 technologies</span>
+      </a>
       <nav aria-label="main navigation" className="nav">
         <button
           className="flex btn btn-menu-control"

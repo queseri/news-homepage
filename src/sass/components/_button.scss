@@ -12,8 +12,24 @@
     z-index: 1;
     position: relative;
 
+    &:hover,
+    &:focus {
+        color: base.$clr-light-vermillion;
+        outline: dashed currentColor;
+        outline-offset: .35em;
+    }
+
     @include utils.mQ(45rem) {
         display: none;
+    }
+}
+
+.btn-logo {
+    &:hover,
+    &:focus {
+        color: base.$clr-light-vermillion;
+        outline: dashed currentColor;
+        outline-offset: .35em;
     }
 }
 
@@ -29,7 +45,14 @@
     letter-spacing: 4.375px;
     display: inline-block;
 
-    @include utils.mQ(45rem) {       
+    &:hover,
+    &:focus {
+        background-color: base.$clr-dark-space-blue;
+        outline: dashed base.$clr-dark-space-blue;
+        outline-offset: .35em;
+    }
+
+    @include utils.mQ(45rem) {
         text-align: center;
         max-width: 12.5rem;
     }
