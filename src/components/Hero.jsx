@@ -7,7 +7,7 @@ function Hero() {
       <div className="container-hero-img">
         <picture>
           <source media="(min-width: 45rem)" srcSet={Web3Desktop} />
-          <img src={Web3Mobile} alt="" />
+          <img src={Web3Mobile} alt="" aria-hidden={true} />
         </picture>
       </div>
       <div className="hero-content">

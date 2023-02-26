@@ -13,12 +13,6 @@
     position: relative;
 
     @include utils.btnActive(base.$clr-light-vermillion, inherit);
-    // &:hover,
-    //&:focus {
-    //   color: base.$clr-light-vermillion;
-    // outline: dashed currentColor;
-    // outline-offset: .35em;
-    // }
 
     @include utils.mQ(45rem) {
         display: none;

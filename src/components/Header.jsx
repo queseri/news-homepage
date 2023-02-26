@@ -18,6 +18,7 @@ function Header({ menu, handleMenu }) {
           aria-expanded={`${menu ? true : false}`}
           onClick={handleMenu}
         >
+          <span className="sr-only">main navigation control</span>
           <img className={`${menu ? "close-img" : ""}`} src={Menu} alt="" />
           <img
             className={`${menu ? "" : "close-img"}`}
