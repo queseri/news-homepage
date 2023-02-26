@@ -7,8 +7,8 @@ function Aside() {
     <aside className="aside">
       <ul className="aside-list">
         <li className="aside-item">
-          <div className="aside-img">
-            <img src={Retros} alt="" />
+          <div className="aside-img-container">
+            <img className="aside-img" src={Retros} alt="" />
           </div>
           <div className="aside-content">
             <span className="aside-item-num">01</span>
@@ -23,8 +23,8 @@ function Aside() {
           </div>
         </li>
         <li className="aside-item">
-          <div className="aside-img">
-            <img src={TopLaptops} alt="" />
+          <div className="aside-img-container">
+            <img className="aside-img" src={TopLaptops} alt="" />
           </div>
           <div className="aside-content">
             <span className="aside-item-num">02</span>
@@ -39,8 +39,8 @@ function Aside() {
           </div>
         </li>
         <li className="aside-item">
-          <div className="aside-img">
-            <img src={Gaming} alt="" />
+          <div className="aside-img-container">
+            <img className="aside-img" src={Gaming} alt="" />
           </div>
           <div className="aside-content">
             <span className="aside-item-num">03</span>

@@ -29,9 +29,12 @@
     letter-spacing: 4.375px;
     display: inline-block;
 
-    @include utils.mQ(45rem) {
-        grid-area: 2/2;
+    @include utils.mQ(45rem) {       
         text-align: center;
         max-width: 12.5rem;
+    }
+
+    @include utils.mQ(63rem) {
+        grid-area: 2/2;
     }
 }
