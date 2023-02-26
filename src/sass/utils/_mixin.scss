@@ -4,3 +4,13 @@
         @content;
     }
 }
+
+@mixin btnActive($color, $bg-color) {
+    &:hover,
+    &:focus {
+        color: $color;
+        outline: dashed currentColor;
+        outline-offset: .35em;
+        background-color: $bg-color;
+    }
+}

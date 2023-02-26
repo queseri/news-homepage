@@ -18,6 +18,7 @@
     font-size: base.$fs-32;
     font-weight: 700;
     line-height: base.$line-height-1;
+
     @include utils.mQ(45rem) {
         font-size: base.$fs-40;
     }
@@ -27,12 +28,7 @@
     color: base.$clr-almost-white;
     text-decoration: none;
 
-    &:hover,
-    &:focus {
-        color: base.$clr-yellow;
-        outline: dashed currentColor;
-        outline-offset: .35em;
-    }
+    @include utils.btnActive(base.$clr-yellow, inherit);
 }
 
 .articles {

@@ -55,13 +55,7 @@
     text-decoration: none;
     color: base.$clr-dark-space-blue;
     line-height: 1.3;
-
-    &:hover,
-    &:focus {
-        color: base.$clr-light-vermillion;
-        outline: dashed currentColor;
-        outline-offset: .35em;
-    }
+    @include utils.btnActive(base.$clr-light-vermillion, inherit);
 }
 
 .aside-content-text {
